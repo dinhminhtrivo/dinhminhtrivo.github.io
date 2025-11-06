@@ -1,5 +1,5 @@
 import React from 'react'
-import './Education.css'
+import '../css/Education.css'
 
 const Education = () => {
   const education = [
