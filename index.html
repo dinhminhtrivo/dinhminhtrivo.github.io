@@ -309,24 +309,41 @@
             gap: 10px;
         }
 
+        .experience-main {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .experience-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+
         .experience-company {
             font-size: 1.1em;
             color: #3498db;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .experience-type {
+            font-size: 1em;
+            color: #7f8c8d;
             font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 10px;
         }
 
         .company-logo {
-            width: 40px;
-            height: 40px;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
             flex-shrink: 0;
-            padding: 3px;
+            padding: 5px;
             background: white;
-            border-radius: 5px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         .experience-date {
@@ -654,7 +671,7 @@
                 <!-- About Me Section -->
                 <div class="section about-me" id="summary">
                     <h2>Professional Summary</h2>
-                    <p>A positive-thinking individual with outstanding mechanic knowledge and over 7 years of experience in the engineering field. A self-disciplined individual with an excellent work ethic, having a technical mindset with enthusiasm, and the ability to learn quickly works and engineering concepts. Leverage concise communication and interpersonal skills to cultivate healthy relationships with team members and external stakeholders. Dedicatedly devote the extra time and effort required to complete given tasks.</p>
+                    <p>A positive-thinking individual with outstanding mechanical knowledge and over 7 years of experience in the engineering field. A self-disciplined professional with an excellent work ethic, possessing a strong technical mindset, enthusiasm, and the ability to quickly grasp new engineering concepts. Leverages concise communication and interpersonal skills to build strong relationships with team members and external stakeholders. Dedicated to putting in the extra time and effort required to complete assigned tasks efficiently. Passionate about applying the latest advancements in information technology to enhance engineering processes, improve system performance, and drive innovation within the industry.</p>
                 </div>
 
                 <!-- Work Experience Section -->
@@ -664,44 +681,50 @@
                     <div class="experience-item">
                         <div class="experience-header" onclick="toggleExperience(this)">
                             <div class="experience-header-content">
-                                <div class="experience-title">
-                                    Battery Bull Operator
-                                    <span class="experience-toggle">▼</span>
-                                </div>
-                                <div class="experience-company">
+                                <div class="experience-main">
                                     <img src="images/bsa.jpg" alt="BSA Logo" class="company-logo">
-                                    Battery Service Australia | Australia
+                                    <div class="experience-text">
+                                        <div class="experience-title">
+                                            Battery Bull Operator
+                                            <span class="experience-toggle">▼</span>
+                                        </div>
+                                        <div class="experience-type">Part time - Permanent</div>
+                                        <div class="experience-company">Battery Service Australia | Australia</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="experience-date">Jan 2025 – Oct 2025</div>
                         </div>
                         <ul>
-                    <li>Safely changed, maintained batteries for forklifts, runners, and reach trucks at Coles Distribution Centre, Edinburgh.</li>
+                    <li>Safely changed, charged and maintained batteries for forklifts, oder pickers, pallet riders and reach trucks at Coles Distribution Centre, Edinburgh.</li>
                     <li>Operated Battery Bull Machine to complete battery swaps in compliance with site safety protocols.</li>
                     <li>Performed battery charging, watering, and preventative maintenance to ensure operational efficiency.</li>
                     <li>Daily monitored and reported battery performance issues, faults, and damage to minimise downtime.</li>
-                    <li>Maintained a clean, organised, and compliant battery bay.</li>
+                    <li>Maintained a clean, organised, and compliant battery system.</li>
                     <li>Accurately recorded battery swaps and service logs, ensuring traceability and reporting compliance.</li>
-                    <li>Worked both independently to improve service quality and support warehouse operations.</li>
+                    <li>Worked both independently to improve service quality and support warehouse operations and maintenance tasks.</li>
                     </ul>
                     </div>
 
                     <div class="experience-item">
                         <div class="experience-header" onclick="toggleExperience(this)">
                             <div class="experience-header-content">
-                                <div class="experience-title">
-                                    Maintenance Worker
-                                    <span class="experience-toggle">▼</span>
-                                </div>
-                                <div class="experience-company">
+                                <div class="experience-main">
                                     <img src="images/bertocchi.webp" alt="Bertocchi Logo" class="company-logo">
-                                    Bertocchi Smallgoods Pty Ltd | Australia
+                                    <div class="experience-text">
+                                        <div class="experience-title">
+                                            Maintenance Worker
+                                            <span class="experience-toggle">▼</span>
+                                        </div>
+                                        <div class="experience-type">Full time</div>
+                                        <div class="experience-company">Bertocchi Smallgoods Pty Ltd | Australia</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="experience-date">May 2022 – Jul 2024</div>
                         </div>
                         <ul>
-                    <li>Using forklift to complete maintenance tasks and warehouse, production support upon request.</li>
+                    <li>Completed maintenance tasks and warehouse, production support upon request.</li>
                     <li>Conduct fitting, welding, fabricating and machining activities meet standard operating procedures.</li>
                     <li>Perform appropriate equipment maintenance to ensure safe and efficient equipment operations.</li>
                     <li>Analyse risks associated with equipment operations to implement safety measures to support seamless production.</li>
@@ -713,13 +736,16 @@
                     <div class="experience-item">
                         <div class="experience-header" onclick="toggleExperience(this)">
                             <div class="experience-header-content">
-                                <div class="experience-title">
-                                    Design Engineer
-                                    <span class="experience-toggle">▼</span>
-                                </div>
-                                <div class="experience-company">
+                                <div class="experience-main">
                                     <img src="images/keytech.png" alt="Key Tech Logo" class="company-logo">
-                                    Key Tech Vietnam Co., Ltd | Vietnam
+                                    <div class="experience-text">
+                                        <div class="experience-title">
+                                            Design Engineer
+                                            <span class="experience-toggle">▼</span>
+                                        </div>
+                                        <div class="experience-type">Full time</div>
+                                        <div class="experience-company">Key Tech Vietnam Co., Ltd | Vietnam</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="experience-date">Apr 2019 – Apr 2022</div>
@@ -737,13 +763,16 @@
                     <div class="experience-item">
                         <div class="experience-header" onclick="toggleExperience(this)">
                             <div class="experience-header-content">
-                                <div class="experience-title">
-                                    Process Engineer
-                                    <span class="experience-toggle">▼</span>
-                                </div>
-                                <div class="experience-company">
+                                <div class="experience-main">
                                     <img src="images/nidec.jpg" alt="Nidec Logo" class="company-logo">
-                                    Nidec Sankyo Vietnam Corporation | Vietnam
+                                    <div class="experience-text">
+                                        <div class="experience-title">
+                                            Process Engineer
+                                            <span class="experience-toggle">▼</span>
+                                        </div>
+                                        <div class="experience-type">Full time</div>
+                                        <div class="experience-company">Nidec Sankyo Vietnam Corporation | Vietnam</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="experience-date">Nov 2018 – Mar 2019</div>
