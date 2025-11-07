@@ -185,6 +185,124 @@ const colesImageFiles = [
     'IMG_7228.JPEG'
 ];
 
+const bertocchiImageFiles = [
+    'IMG_0069.JPEG',
+    'IMG_0079.JPEG',
+    'IMG_0930.JPEG',
+    'IMG_1184.JPEG',
+    'IMG_1187.JPEG',
+    'IMG_2770.JPEG',
+    'IMG_4023.JPEG',
+    'IMG_4025.JPEG',
+    'IMG_4199.JPEG',
+    'IMG_4200.JPEG',
+    'IMG_4537.JPEG',
+    'IMG_4584.JPEG',
+    'IMG_4886.JPEG',
+    'IMG_8061.JPEG',
+    'IMG_8744.JPEG',
+    'IMG_8745.JPEG',
+    'IMG_8746.JPEG',
+    'IMG_8749.JPEG',
+    'IMG_8847.JPEG',
+    'IMG_8852.JPEG',
+    'IMG_8861.JPEG',
+    'IMG_8868.JPEG',
+    'IMG_8901.JPEG',
+    'IMG_8907.JPEG',
+    'IMG_8917.JPEG',
+    'IMG_9182.JPEG',
+    'IMG_9214.JPEG',
+    'IMG_9291.JPEG',
+    'IMG_9339.JPEG',
+    'IMG_9343.JPEG',
+    'IMG_9423.JPEG',
+    'IMG_9427.JPEG',
+    'IMG_9428.JPEG',
+    'IMG_9437.JPEG',
+    'IMG_9445.JPEG',
+    'IMG_9696.JPEG',
+    'IMG_9991.JPEG',
+    'IMG_9992.JPEG',
+    'IMG_9993.JPEG',
+    'IMG_9994.JPEG'
+];
+
+const keytechImageFiles = [
+    '0178e64f46dc4691b8b9c4ca4e084117.jpg',
+    '04fab494c93992a3ff12ce6edfd060e1.jpg',
+    '097e698dcf5e50e52b3eb7e18c574c1f.jpg',
+    '09ce11b58a3699f31b471642afa81cd1.jpg',
+    '0d7d25b4eb117845ae20b21ad5758c8f.jpg',
+    '0ed0b3297a8baa0046613c29673e4c41.jpg',
+    '110c70871d475cf0970696636dcdd5c1.jpg',
+    '119ce8ea5c6a0ea88946042402f6232e.jpg',
+    '12c1ee71095582b7eaa2bdd4576ec803.jpg',
+    '139293241b10a35370f728c4ce13384d.jpg',
+    '1429eae992d8b2a0c28be9ab7a8108e5.jpg',
+    '1a257638ffc1627672844b33db2c48a4.jpg',
+    '1a820105ac563b9e8750511d031e2323.jpg',
+    '1adc5fa4a4b4db047bf8f262c7699a0e.jpg',
+    '1b4edc7b1a02c31291573afc4a28d8d9.jpg',
+    '1c0cd6fc9e6d16cee891b10fc9c93cbf.jpg',
+    '1c2031ea11cb67578e183ce383e90b61.jpg',
+    '1cc7094854c1d21dd366cb7d13f19b00.jpg',
+    '1d40074bec9769c8187f84ce7f085be1.jpg',
+    '234cf92cd31afa5968703dffc14ba040.jpg',
+    '23aa58a4e01aa965f4dabaf3a0847274.jpg',
+    '2abc31a561f8d9a442b50b098ad6d60d.jpg',
+    '2e48fbb05ed2f7275fe453a32470dd81.jpg',
+    '2fc02bbd6525e3ed43ffd0b4c0fdf53b.jpg',
+    '33730541318381af6c05b5fb13337fba.jpg',
+    '3af1750eb74978204775dbff4809c575.jpg',
+    '3b2eedf8355fc0400ab70b38e899d40e.jpg',
+    '3df18733fc0d69f4eb8c0e618b8c13ad.jpg',
+    '3e5ac34afa8784047a2bcbae53cdf610.jpg',
+    '3fff6b26f9fa2840aae921b71e1b035d.jpg',
+    '4504bc094f2993164e2cf4d92689e576.jpg',
+    '454b8c51abc3544b991dfc1582d8a21f.jpg',
+    '4901b4f2fb669e958d4eb646d1eb2d01.jpg',
+    '4e5d03d1aec20675a1f40dc761951648.jpg',
+    '50f960dd48dcec1b391e130508bcaec0.jpg',
+    '54f5d32bc11117ba3c77887511e3202e.jpg',
+    '5500e0585cb3c4a55285f2a82b3002bc.jpg',
+    '571207597ab03d9a072c2e245724a8c5.jpg',
+    '57c1a0c23813993ffdb693c74784b8ad.jpg',
+    '57f9667dde6f161806f429a7f6b279d9.jpg',
+    '58ffb3437a3d18952c0fa445287226b5.jpg',
+    '59f0a9fc4cd9dc034977d62cd7fcc5a8.jpg',
+    '5b22d79fee48bd2911f8fdc8617f4a24.jpg',
+    '5c842386101e42da6a18f78e676c107c.jpg',
+    '5fd8c8e8675a39233903e09d818fac56.jpg',
+    '65f6bff63a7e52140da1d2c0846cb44b.jpg',
+    '6b0c2a4b2ae97845d3c3229ebfd8374e.jpg',
+    '6c2aee268ba75f1d48448c41f8a0d0a1.jpg',
+    '6d775baea52c0024ff5fc7d63cc04bb4.jpg',
+    '6ecc56c3733e2a733f68ca82e4bb0ae0.jpg',
+    '7ae29b81bf8e320349e2de3af42b2548.jpg',
+    '7b228e1e093fc9683af08cbbff6a268a.jpg',
+    '7f8c04ea2ff7c9c26f4780eb35644942.jpg',
+    '85fff2cdc175751e7597f2018d68e82d.jpg',
+    '88780a41d387250e2dbe1ce9f4a838d6.jpg',
+    '8c195d92752e7685cb8ad158622a2272.jpg',
+    '8c9905946f156cea00ef95ff20cdc5c8.jpg',
+    '8f1ab6f8d666a1c429fbfbde5f93d34f.jpg',
+    '9128fabc8d8650d900c2c8fcd53de135.jpg',
+    '95fd3db31290574576e9c45ea457be66.jpg',
+    '97fd646b0e64e6af940d19a62b1b3ebf.jpg',
+    '9afbafe45ed0c8399e375e082d75ef2a.jpg',
+    '9b086bd837aa3cd140bb841531969efe.jpg',
+    'a0827c93dc941caf20ccce9a8593f425.jpg',
+    'a1d1c1f54ebde6f3747c2fc09987a820.jpg',
+    'a30386ca7c97c8ef063a7226dfde309a.jpg',
+    'a5f822753fbd4c4654672e7eeb069a15.jpg',
+    'abf07d8239d74eb957ff07daa9abd671.jpg',
+    'ac6b20a59d8767ef425ab0df9c47bb28.jpg',
+    'd9faaaf3de1cb00aa6133131137f7b28.jpg',
+    'e08e0da9c8a7ba0783e298468d2bad52.jpg',
+    'f84952299aba88d7d1a506944e49f9d2.jpg'
+];
+
 const galleryBlueprints = {
     colesGallery: {
         title: 'Battery Bull Operator Playlist',
@@ -205,6 +323,32 @@ const galleryBlueprints = {
                 };
             })
         ]
+    },
+    bertocchiGallery: {
+        title: 'Bertocchi Workshop Snapshot',
+        description: 'Daily operations, fabrication tasks, and workshop improvements at Bertocchi Smallgoods.',
+        images: bertocchiImageFiles.map((file, index) => {
+            const baseName = file.replace(/\.[^.]+$/, '');
+
+            return {
+                type: 'image',
+                src: 'projects/bertocchi/images/' + file,
+                caption: baseName || `Bertocchi Workshop ${index + 1}`
+            };
+        })
+    },
+    keytechGallery: {
+        title: 'Key Tech Project Highlights',
+        description: 'Selected automation and engineering projects delivered by Key Tech Vietnam.',
+        images: keytechImageFiles.map((file, index) => {
+            const baseName = file.replace(/\.[^.]+$/, '');
+
+            return {
+                type: 'image',
+                src: 'projects/keytech/images/' + file,
+                caption: `Key Tech Project ${index + 1}`
+            };
+        })
     }
 };
 
