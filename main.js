@@ -303,6 +303,14 @@ const keytechImageFiles = [
     'f84952299aba88d7d1a506944e49f9d2.jpg'
 ];
 
+const flindersImageFiles = [
+    'commendationLetter.jpg'
+];
+
+const hcmutImageFiles = [
+    'bachelorCelemorny.jpg'
+];
+
 const galleryBlueprints = {
     colesGallery: {
         title: 'Battery Bull Operator Playlist',
@@ -347,6 +355,32 @@ const galleryBlueprints = {
                 type: 'image',
                 src: 'projects/keytech/images/' + file,
                 caption: `Key Tech Project ${index + 1}`
+            };
+        })
+    },
+    flindersGallery: {
+        title: 'Flinders University Playlist',
+        description: 'Images and documents from Flinders University.',
+        images: flindersImageFiles.map((file, index) => {
+            const baseName = file.replace(/\.[^.]+$/, '');
+
+            return {
+                type: 'image',
+                src: 'projects/flinders/' + file,
+                caption: baseName.replace(/([A-Z])/g, ' $1').trim() || `Flinders University ${index + 1}`
+            };
+        })
+    },
+    hcmutGallery: {
+        title: 'HCMUT Playlist',
+        description: 'Images and documents from Ho Chi Minh City University of Technology.',
+        images: hcmutImageFiles.map((file, index) => {
+            const baseName = file.replace(/\.[^.]+$/, '');
+
+            return {
+                type: 'image',
+                src: 'projects/hcmut/' + file,
+                caption: baseName.replace(/([A-Z])/g, ' $1').trim() || `HCMUT ${index + 1}`
             };
         })
     }

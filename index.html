@@ -475,8 +475,24 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
+        .education-main {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
         .education-content {
             flex: 1;
+        }
+
+        .education-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 12px;
+            margin-left: auto;
         }
 
         .education-degree {
@@ -487,6 +503,16 @@
         }
 
         .education-date {
+            color: #7f8c8d;
+            font-size: 1em;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 8px 15px;
+            background: #ecf0f1;
+            border-radius: 20px;
+        }
+
+        .education-duration {
             color: #7f8c8d;
             font-size: 1em;
             margin-bottom: 10px;
@@ -623,6 +649,7 @@
             flex-direction: column;
             overflow: hidden;
             box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+            min-height: 0;
         }
 
         .gallery-header {
@@ -632,6 +659,7 @@
             gap: 20px;
             padding: 24px 28px 16px;
             border-bottom: 1px solid #ecf0f1;
+            flex-shrink: 0;
         }
 
         .gallery-headings {
@@ -676,6 +704,9 @@
             align-items: center;
             justify-content: center;
             padding: 28px 36px 24px;
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow: hidden;
         }
 
         .gallery-slide {
@@ -689,7 +720,8 @@
 
         .gallery-media {
             width: min(720px, 75vw);
-            height: clamp(360px, 60vh, 520px);
+            height: clamp(360px, 50vh, 480px);
+            max-height: calc(92vh - 200px);
             border-radius: 18px;
             box-shadow: 0 18px 34px rgba(0,0,0,0.2);
             background: #f0f3f5;
@@ -697,6 +729,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 1;
         }
 
         .gallery-media img {
@@ -775,6 +808,7 @@
             color: #7f8c8d;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+            flex-shrink: 0;
         }
 
         /* Responsive Design */
@@ -850,6 +884,21 @@
             }
 
             .experience-date {
+                align-self: flex-start;
+            }
+
+            .education-item {
+                flex-direction: column;
+            }
+
+            .education-meta {
+                width: 100%;
+                align-items: flex-start;
+                margin-left: 0;
+                margin-top: 15px;
+            }
+
+            .education-date {
                 align-self: flex-start;
             }
 
@@ -1077,20 +1126,32 @@
                     <h2>Education</h2>
                     
                     <div class="education-item">
-                        <img src="images/flinders.png" alt="Flinders University Logo" class="education-logo">
-                        <div class="education-content">
-                            <div class="education-degree">Master of Information Technology</div>
-                            <div class="education-date">Jul 2024 – Jun 2026 (2 years program – full time)</div>
-                            <div class="education-institution">Flinders University – Festival Plaza City Campus</div>
+                        <div class="education-main">
+                            <img src="images/flinders.png" alt="Flinders University Logo" class="education-logo">
+                            <div class="education-content">
+                                <div class="education-degree">Master of Information Technology</div>
+                                <div class="education-duration">2 years program – full time</div>
+                                <div class="education-institution">Flinders University – Festival Plaza City Campus</div>
+                            </div>
+                        </div>
+                        <div class="education-meta">
+                            <div class="education-date">Jul 2024 – Jun 2026</div>
+                            <button type="button" class="view-more-btn" data-gallery-target="flindersGallery" aria-label="View the Flinders University image playlist">View More</button>
                         </div>
                     </div>
 
                     <div class="education-item">
-                        <img src="images/vnuhcmut.png" alt="HCMUT Logo" class="education-logo">
-                        <div class="education-content">
-                            <div class="education-degree">Bachelor of Engineering: Engineering Mechanics</div>
-                            <div class="education-date">Aug 2014 – Oct 2018 (4 years program – full time)</div>
-                            <div class="education-institution">Viet Nam National University - Ho Chi Minh City University of Technology (HCMUT)</div>
+                        <div class="education-main">
+                            <img src="images/vnuhcmut.png" alt="HCMUT Logo" class="education-logo">
+                            <div class="education-content">
+                                <div class="education-degree">Bachelor of Engineering: Engineering Mechanics</div>
+                                <div class="education-duration">4 years program – full time</div>
+                                <div class="education-institution">Viet Nam National University - Ho Chi Minh City University of Technology (HCMUT)</div>
+                            </div>
+                        </div>
+                        <div class="education-meta">
+                            <div class="education-date">Aug 2014 – Oct 2018</div>
+                            <button type="button" class="view-more-btn" data-gallery-target="hcmutGallery" aria-label="View the HCMUT image playlist">View More</button>
                         </div>
                     </div>
                 </div>
@@ -1140,7 +1201,7 @@
                 <div class="referee-card">
                     <div class="referee-name">Mr. David Luxton</div>
                     <div class="referee-position">Facility Manager</div>
-                    <div class="referee-company">Coles Distribution Centre</div>
+                    <div class="referee-company">Coles Edinburgh Distribution Centre</div>
                     <div class="referee-contact">
                         <p><strong>Phone:</strong> +61 488 944 242</p>
                         <p><strong>Email:</strong> david.luxton@coles.com.au</p>
@@ -1229,6 +1290,54 @@
                 <div class="gallery-headings">
                     <h3 class="gallery-title" id="keytechGalleryTitle">Key Tech Project Highlights</h3>
                     <p class="gallery-description">Selected automation and engineering projects delivered by Key Tech Vietnam.</p>
+                </div>
+                <button type="button" class="gallery-close" aria-label="Close gallery">&times;</button>
+            </div>
+            <div class="gallery-body">
+                <button type="button" class="gallery-nav gallery-prev" aria-label="Previous image">&#8249;</button>
+                <figure class="gallery-slide">
+                    <div class="gallery-media">
+                        <img src="" alt="" />
+                        <iframe src="" title="Gallery video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <figcaption class="gallery-caption"></figcaption>
+                </figure>
+                <button type="button" class="gallery-nav gallery-next" aria-label="Next image">&#8250;</button>
+            </div>
+            <div class="gallery-counter" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <div class="gallery-overlay" id="flindersGallery" aria-hidden="true">
+        <div class="gallery-content" role="dialog" aria-modal="true" aria-labelledby="flindersGalleryTitle">
+            <div class="gallery-header">
+                <div class="gallery-headings">
+                    <h3 class="gallery-title" id="flindersGalleryTitle">Flinders University Playlist</h3>
+                    <p class="gallery-description">Images and documents from Flinders University.</p>
+                </div>
+                <button type="button" class="gallery-close" aria-label="Close gallery">&times;</button>
+            </div>
+            <div class="gallery-body">
+                <button type="button" class="gallery-nav gallery-prev" aria-label="Previous image">&#8249;</button>
+                <figure class="gallery-slide">
+                    <div class="gallery-media">
+                        <img src="" alt="" />
+                        <iframe src="" title="Gallery video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <figcaption class="gallery-caption"></figcaption>
+                </figure>
+                <button type="button" class="gallery-nav gallery-next" aria-label="Next image">&#8250;</button>
+            </div>
+            <div class="gallery-counter" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <div class="gallery-overlay" id="hcmutGallery" aria-hidden="true">
+        <div class="gallery-content" role="dialog" aria-modal="true" aria-labelledby="hcmutGalleryTitle">
+            <div class="gallery-header">
+                <div class="gallery-headings">
+                    <h3 class="gallery-title" id="hcmutGalleryTitle">HCMUT Playlist</h3>
+                    <p class="gallery-description">Images and documents from Ho Chi Minh City University of Technology.</p>
                 </div>
                 <button type="button" class="gallery-close" aria-label="Close gallery">&times;</button>
             </div>
